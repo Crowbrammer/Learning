@@ -1,0 +1,3 @@
+Tasks
+
+ - Generate labels through logic from the database, based on machine-model combo's required number of positions from the training pool--starting with least-#-trained positions to highest. 

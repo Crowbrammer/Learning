@@ -10,6 +10,12 @@ StudentDB:
 <Label1>
 	font_size: 40
 
+<Label2>
+	font_size: 20
+
+<BoxLayout>:
+	padding: 40, 40
+
  
 <StudentDB>:
     orientation: "vertical"
@@ -24,18 +30,22 @@ StudentDB:
 	BoxLayout:
         size_hint_y: None
         height: "120dp"
-		orientation: 'vertical'
-		padding: 40, 40
-		spacing: machine_name.size[1] + 50
 		
+		Label1:
+			text: "Machine:"
 		Label1:
 			id: machine_name
 			text: "[I-41]"
 		Label1:
+			text: "Model:"
+		Label1:
 			id: model_name
 			text: "[CSEG]"
 		
-	
+	BoxLayout:
+		size_hint_y: None
+        height: "60dp"
+
     BoxLayout:
         size_hint_y: None
         height: "40dp"
