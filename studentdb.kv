@@ -12,6 +12,7 @@ StudentDB:
 
 <Label2>
 	font_size: 20
+	text: "Rita Hernandez"
 
 <BoxLayout>:
 	padding: 40, 40
@@ -28,23 +29,34 @@ StudentDB:
     spacing: 10
 	
 	BoxLayout:
-        size_hint_y: None
-        height: "120dp"
+		BoxLayout:
+			orientation: 'vertical'
+			size_hint_y: None
+			height: "60dp"
+			spacing: 40
+			
+			Label2:
+			Label2:
+			Label2: 
+		BoxLayout:
+			orientation: 'vertical'
+			size_hint_y: None
+			height: "120dp"
+			spacing: 40
+			
+			Label1:
+				text: "Machine:"
+			Label1:
+				id: machine_name
+				text: "[I-41]"
+			Label1:
+				text: "Model:"
+			Label1:
+				id: model_name
+				text: "[CSEG]"
+			
 		
-		Label1:
-			text: "Machine:"
-		Label1:
-			id: machine_name
-			text: "[I-41]"
-		Label1:
-			text: "Model:"
-		Label1:
-			id: model_name
-			text: "[CSEG]"
 		
-	BoxLayout:
-		size_hint_y: None
-        height: "60dp"
 
     BoxLayout:
         size_hint_y: None
